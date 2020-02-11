@@ -1,0 +1,266 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: Arial;
+
+  padding:0;
+  margin:0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width:100%;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+#Starting {
+  background-color:black;
+  width:100vw;
+  height:100vh;
+  background-image:url("images/StartingBackground.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#DownArrow {
+  position: relative;
+  width:500px;
+  height:200px;
+  top: 90%;
+
+  opacity: 0.5;
+  transform: translate(0, -50%);
+  animation-name: DownArrowAnimation;
+  animation-duration: 0.5s;
+  cursor:pointer;
+}
+
+#DownArrow:Hover {
+  top: 88%;
+  animation-name: DownArrowHoverAnimation;
+  animation-duration: 0.5s;
+  opacity: 0.8;
+}
+
+#StartingTable {
+  width:100%;
+  height:100%;
+}
+
+#StartingTable td {
+  width:100%;
+  height:50%;
+  color:white;
+  text-align: center;
+  font-family: Futura;
+  font-size: 100px;
+  position: relative;
+  top: 0px;
+  vertical-align: middle;
+}
+
+@keyframes DownArrowAnimation {
+  from {
+    opacity: 0.8;
+    top: 88%;
+  }
+  to {
+    opacity: 0.5;
+    top:90%;
+  }
+}
+@keyframes DownArrowHoverAnimation {
+  from {
+    opacity: 0.5;
+    top: 90%;
+  }
+  to {
+    opacity: 0.8;
+    top:88%;
+  }
+}
+
+
+
+
+
+#header {
+  height:100px;
+  background-color:rgba(104, 104, 104,0.8);
+  vertical-align: center;
+  align-content: center;
+  width:100%;
+  position: fixed;
+  min-width: 1200px;
+  z-index: 1;
+
+}
+
+#headerTable {
+  padding:0;
+  height: 100%;
+  float:left;
+}
+
+#headerTable td{
+
+  height:100%;
+
+}
+
+#Spacing {
+  width:20px;
+}
+#ImageCell {
+  width:85px;
+}
+
+#MImage {
+  width:85px;
+  height:85px;
+  cursor:pointer;
+}
+
+#NAME {
+  font-size: 45px;
+  font-family:courier;
+  text-align: center;
+  vertical-align: center;
+  color:#b3b3b3;
+}
+
+#LinkTable {
+  float:right;
+  font-size:30px;
+  height:100%;
+  width:60%;
+}
+
+#LinkTable td{
+  text-align: center;
+  padding:5px;
+  width:0.2%;
+  cursor: pointer;
+  color:#d3d3d3;
+}
+
+#LinkTable td a {
+  color:#d3d3d3;
+  text-decoration: none;
+  display: inline-block;
+  width:100%;
+  height: 100%;
+  margin:0 auto;
+}
+
+
+#LinkTable td:hover{
+ animation-name:highlightHeader;
+ animation-duration: 0.5s;
+background-color:rgba(255, 255, 255,0.5);
+color:black;
+}
+
+#LinkTable td a span:hover {
+
+}
+
+.TopLinkText {
+  position: relative;
+  top:25%;
+
+}
+
+
+@keyframes highlightHeader {
+  0% {
+    background-color: rgba(0,0,0,0);
+    color:#d3d3d3;
+  }
+  25% {
+   background-color:rgba(204, 204, 204,0.5);;
+  }
+  100% {
+    background-color:rgba(255, 255, 255,0.5);
+    color:black;
+  }
+}
+
+
+#Content {
+  position: absolute;
+  top:100% + 100px;
+  width: 100%;
+  color:white;
+  padding:0;
+  margin:0;
+  background-image:url("images/Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+
+.ContentSection {
+  position: relative;
+  padding:10px;
+  top:100px;
+  background-color:rgba(76, 76, 76,0.6);
+  width:100%;
+  height:auto;
+
+}
+
+.ContentSectionContent {
+  width:75%;
+  margin:auto;
+}
+
+.ContentSpacer {
+  height:100px;
+}
+
+#EducationTable {
+  width:100%;
+}
+
+#EducationTable td{
+  color:white;
+  padding:5px;
+}
+
+#Contact {
+  position: relative;
+  padding:10px;
+  margin:0;
+  top:100px;
+  background-image:url("images/ContactBackground.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+
+}
+
+#SkillsTable {
+  padding:10px;
+  width:100%;
+}
+
+#SkillsTable td {
+  padding:5px;
+}
+
+.IndentedList {
+  margin-left:40px;
+}
+
+#AccomplishmentList li {
+  padding:3px;
+}
